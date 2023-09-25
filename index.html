@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap" rel="stylesheet">
+	<style>
+		body
+		{
+			margin: 0;
+			height: 100vh;
+			overflow: hidden;
+		}
+		.clock-container
+		{
+			height: 100%;
+			width: 100%;
+		}
+		.clock-container .map
+		{
+			height: inherit;
+			width: inherit;
+		}
+		.clock-container .text
+		{
+			bottom: 1%;
+			margin-left: 3%;
+			position: fixed;
+			font-family: 'Inter Tight';
+		}
+		.clock-container .location
+		{
+			color: #F6A300;
+			font-size: 5vh;
+			margin-bottom: -4%;
+		}
+		.clock-container .time
+		{
+			color: #E0DCDA;
+			font-size: 30vh;
+		}
+	</style>
+</head>
+<body>
+	<div class="clock-container">
+		<img class="map" src="map.svg">
+		<div class="text">
+			<div class="location">Berlin</div>
+			<div class="time"></div>
+		</div>
+	</div>
+	<script>
+		function updateTime()
+		{
+			var now = new Date();
+			document.getElementsByClassName('time')[0].innerHTML = now.getHours() + ':' + ('0' + now.getMinutes()).slice(-2);
+		}
+		updateTime();
+		setInterval(updateTime, (60 * 1000));
+	</script>
+</body>
+</html>

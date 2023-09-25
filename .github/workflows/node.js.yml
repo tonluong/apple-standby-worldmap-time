@@ -1,0 +1,21 @@
+name: Create map picture
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    name: Create map picture
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm install
+      - name: Create map picture
+        run: node create.js
+      - name: Create map picture artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: map.svg
+          path: map.svg
