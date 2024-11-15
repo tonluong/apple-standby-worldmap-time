@@ -11,8 +11,8 @@ const map = new DottedMap(
 // create a highlighted location
 map.addPin(
 {
-	lat: 52.5069386,							// coordinates of the highlighted location
-	lng: 13.2599276,
+	lat: 37.3376716,
+	lng: -121.8874266,
 	svgOptions:
 	{
 		radius: 0.6,							// dot size

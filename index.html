@@ -34,6 +34,7 @@
 		.clock-container .location
 		{
 			color: #F6A300;
+            color: #ff9f0a;
 			font-size: 5vh;
 			margin-bottom: -4%;
 		}
@@ -48,7 +49,7 @@
 	<div class="clock-container">
 		<img class="map" src="map.svg">
 		<div class="text">
-			<div class="location">Berlin</div>
+			<div class="location">Bay Area</div>
 			<div class="time"></div>
 		</div>
 	</div>
@@ -56,10 +57,10 @@
 		function updateTime()
 		{
 			var now = new Date();
-			document.getElementsByClassName('time')[0].innerHTML = now.getHours() + ':' + ('0' + now.getMinutes()).slice(-2);
+			document.getElementsByClassName('time')[0].innerHTML = (now.getHours() % 12 || 12) + ':' + ('0' + now.getMinutes()).slice(-2);
 		}
 		updateTime();
-		setInterval(updateTime, (60 * 1000));
+		setInterval(updateTime, (45 * 1000));
 	</script>
 </body>
 </html>

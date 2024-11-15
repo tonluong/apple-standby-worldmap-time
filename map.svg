@@ -555,7 +555,7 @@
 <circle cx="42" cy="10" r="0.3" fill="#827670" />
 <circle cx="43" cy="10" r="0.3" fill="#827670" />
 <circle cx="44" cy="10" r="0.3" fill="#827670" />
-<circle cx="45" cy="10" r="0.6" fill="#F6A300" />
+<circle cx="45" cy="10" r="0.3" fill="#827670" />
 <circle cx="46" cy="10" r="0.3" fill="#827670" />
 <circle cx="47" cy="10" r="0.3" fill="#827670" />
 <circle cx="48" cy="10" r="0.3" fill="#827670" />
@@ -1201,4 +1201,5 @@
 <circle cx="25" cy="38" r="0.3" fill="#827670" />
 <circle cx="25" cy="39" r="0.3" fill="#827670" />
 <circle cx="26" cy="39" r="0.3" fill="#827670" />
+<circle cx="13" cy="15" r="0.6" fill="#F6A300" />
       </svg>
