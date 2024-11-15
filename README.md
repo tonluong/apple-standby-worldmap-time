@@ -1,4 +1,4 @@
-# Apple StandBy Clock Worldmap
+# Apple StandBy Worldmap Time
 
 Create a HTML page with a dotted world map, your location highlighted and the current time. Like the Standby Clock on iOS devices.
 
@@ -14,6 +14,15 @@ node create.js
 ```
 * open `index.html`
 
-## Acknowledgment
+## Feature
 
-The worldmap is created with https://github.com/NTag/dotted-map/tree/main
+* 12-hours format
+
+## ToDo
+
+* Settings 
+* Settings via URL params
+
+## Acknowledgment
+* 2024-11-14 Forked from `https://github.com/the-sz/Apple-StandBy-Clock-Worldmap`
+* The worldmap is created with https://github.com/NTag/dotted-map/tree/main
